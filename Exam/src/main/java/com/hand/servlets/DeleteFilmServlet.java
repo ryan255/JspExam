@@ -48,7 +48,6 @@ public class DeleteFilmServlet extends HttpServlet {
 		String id = request.getParameter("id");
 		int fid = Integer.parseInt(id);
 		Film film = new Film();
-		film.setTitle(id);
 		film.setFilm_id(fid);
 		Connection conn= new JdbcConnection().getConnection();
 		FilmDao filmDao = new FilmDaoImpl();

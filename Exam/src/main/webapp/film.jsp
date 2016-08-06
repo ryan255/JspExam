@@ -20,10 +20,10 @@
 	<a href="index.jsp">返回首页</a>
 	<table>
 		<tr>
-			<td width=10% align="center">电影ID</td>
-			<td width=10% align="center">电影名</td>
-			<td width=20% align="center">描述</td>
-			<td width=20% align="center">语言</td>
+			<td width=10% >电影ID</td>
+			<td width=10% >电影名</td>
+			<td width=20% >描述</td>
+			<td width=20% >语言</td>
 		</tr>
 		<%
 			try {
@@ -46,11 +46,11 @@
 					while (rs1.next()) {
 		%>
 		<tr>
-			<td width=10% align="center"><%=rs.getString(1)%></td>
-			<td width=10% align="center"><%=rs.getString(2)%></td>
-			<td width=20% align="center"><%=rs.getString(3)%></td>
-			<td width=20% align="center"><%=rs1.getString(1)%></td>
-			<td width=5% align="center">
+			<td width=10% ><%=rs.getString(1)%></td>
+			<td width=10% ><%=rs.getString(2)%></td>
+			<td width=20% ><%=rs.getString(3)%></td>
+			<td width=20% ><%=rs1.getString(1)%></td>
+			<td width=5% >
 			
 			
 			<form action="<%=request.getContextPath()%>/DeleteFilmServlet" method="post">

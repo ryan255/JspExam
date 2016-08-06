@@ -1,136 +1,124 @@
 package com.hand.entities;
-
-import java.math.BigDecimal;
-import java.util.Date;
+import java.sql.Date;
+import java.sql.Timestamp;
 
 public class Film {
-    private Short filmId;
+	private int film_id;
+	private String title;
+	private String description;
+	private Date release_year;
+	private int language_id;
+	private int original_language_id;
+	private int rental_duration;
+	private float rental_rate;
+	private int length;
+	private float replacement_cost;
+	private Timestamp last_update;
 
-    private String title;
+	private String rating;
+	private String special_features;
 
-    private Date releaseYear;
+	public String getRating() {
+		return rating;
+	}
 
-    private Byte languageId;
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
 
-    private Byte originalLanguageId;
+	public String getSpecial_features() {
+		return special_features;
+	}
 
-    private Byte rentalDuration;
+	public void setSpecial_features(String special_features) {
+		this.special_features = special_features;
+	}
 
-    private BigDecimal rentalRate;
+	public int getFilm_id() {
+		return film_id;
+	}
 
-    private Short length;
+	public void setFilm_id(int film_id) {
+		this.film_id = film_id;
+	}
 
-    private BigDecimal replacementCost;
+	public String getTitle() {
+		return title;
+	}
 
-    private String rating;
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
-    private String specialFeatures;
+	public String getDescription() {
+		return description;
+	}
 
-    private Date lastUpdate;
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
-    private String description;
+	public Date getRelease_year() {
+		return release_year;
+	}
 
-    public Short getFilmId() {
-        return filmId;
-    }
+	public void setRelease_year(Date release_year) {
+		this.release_year = release_year;
+	}
 
-    public void setFilmId(Short filmId) {
-        this.filmId = filmId;
-    }
+	public int getLanguage_id() {
+		return language_id;
+	}
 
-    public String getTitle() {
-        return title;
-    }
+	public void setLanguage_id(int language_id) {
+		this.language_id = language_id;
+	}
 
-    public void setTitle(String title) {
-        this.title = title == null ? null : title.trim();
-    }
+	public int getOriginal_language_id() {
+		return original_language_id;
+	}
 
-    public Date getReleaseYear() {
-        return releaseYear;
-    }
+	public void setOriginal_language_id(int original_language_id) {
+		this.original_language_id = original_language_id;
+	}
 
-    public void setReleaseYear(Date releaseYear) {
-        this.releaseYear = releaseYear;
-    }
+	public int getRental_duration() {
+		return rental_duration;
+	}
 
-    public Byte getLanguageId() {
-        return languageId;
-    }
+	public void setRental_duration(int rental_duration) {
+		this.rental_duration = rental_duration;
+	}
 
-    public void setLanguageId(Byte languageId) {
-        this.languageId = languageId;
-    }
+	public float getRental_rate() {
+		return rental_rate;
+	}
 
-    public Byte getOriginalLanguageId() {
-        return originalLanguageId;
-    }
+	public void setRental_rate(float rental_rate) {
+		this.rental_rate = rental_rate;
+	}
 
-    public void setOriginalLanguageId(Byte originalLanguageId) {
-        this.originalLanguageId = originalLanguageId;
-    }
+	public int getLength() {
+		return length;
+	}
 
-    public Byte getRentalDuration() {
-        return rentalDuration;
-    }
+	public void setLength(int length) {
+		this.length = length;
+	}
 
-    public void setRentalDuration(Byte rentalDuration) {
-        this.rentalDuration = rentalDuration;
-    }
+	public float getReplacement_cost() {
+		return replacement_cost;
+	}
 
-    public BigDecimal getRentalRate() {
-        return rentalRate;
-    }
+	public void setReplacement_cost(float replacement_cost) {
+		this.replacement_cost = replacement_cost;
+	}
 
-    public void setRentalRate(BigDecimal rentalRate) {
-        this.rentalRate = rentalRate;
-    }
+	public Timestamp getLast_update() {
+		return last_update;
+	}
 
-    public Short getLength() {
-        return length;
-    }
-
-    public void setLength(Short length) {
-        this.length = length;
-    }
-
-    public BigDecimal getReplacementCost() {
-        return replacementCost;
-    }
-
-    public void setReplacementCost(BigDecimal replacementCost) {
-        this.replacementCost = replacementCost;
-    }
-
-    public String getRating() {
-        return rating;
-    }
-
-    public void setRating(String rating) {
-        this.rating = rating == null ? null : rating.trim();
-    }
-
-    public String getSpecialFeatures() {
-        return specialFeatures;
-    }
-
-    public void setSpecialFeatures(String specialFeatures) {
-        this.specialFeatures = specialFeatures == null ? null : specialFeatures.trim();
-    }
-
-    public Date getLastUpdate() {
-        return lastUpdate;
-    }
-
-    public void setLastUpdate(Date lastUpdate) {
-        this.lastUpdate = lastUpdate;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description == null ? null : description.trim();
-    }
+	public void setLast_update(Timestamp last_update) {
+		this.last_update = last_update;
+	}
 }

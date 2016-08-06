@@ -16,6 +16,35 @@
 		<description></description>
 		<servlet-class>com.hand.servlets.FilmServlet</servlet-class>
 	</servlet>
+	<servlet>
+  	<servlet-name>AddFilmServlet</servlet-name>
+  	<display-name>AddFilmServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hand.servlets.AddFilmServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteFilmServlet</servlet-name>
+  	<display-name>DeleteFilmServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hand.servlets.DeleteFilmServlet</servlet-class>
+  </servlet>
+	<servlet>
+		<servlet-name>FreeMarker</servlet-name>
+		<display-name>FreeMarker</display-name>
+		<description></description>
+		<servlet-class>com.hand.servlets.FreeMarker</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+  	<servlet-name>AddFilmServlet</servlet-name>
+  	<url-pattern>/AddFilmServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteFilmServlet</servlet-name>
+  	<url-pattern>/DeleteFilmServlet</url-pattern>
+  </servlet-mapping>
+	
+	
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/LoginServlet</url-pattern>
@@ -23,6 +52,10 @@
 	<servlet-mapping>
 		<servlet-name>FilmServlet</servlet-name>
 		<url-pattern>/FilmServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FreeMarker</servlet-name>
+		<url-pattern>/FreeMarker</url-pattern>
 	</servlet-mapping>
 
 

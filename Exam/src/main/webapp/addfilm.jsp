@@ -9,10 +9,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>添加电影</title>
 </head>
 <body>
-<center>
+<a href="index.jsp">返回首页</a>
 		<form action="<%=request.getContextPath()%>/AddFilmServlet"
 			method="post">
 			<table>
@@ -58,7 +58,5 @@
 				</tr>
 			</table>
 		</form>
-
-	</center>
 </body>
 </html>

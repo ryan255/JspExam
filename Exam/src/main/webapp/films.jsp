@@ -4,6 +4,8 @@
     import="com.hand.entities.*"
     import="com.hand.dao.*"
     import="com.hand.conn.*"
+    import="java.sql.PreparedStatement"
+    import="java.sql.ResultSet"
     %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -22,8 +24,7 @@
 		<%
 			try {
 				Film film = new Film();
-				FilmDao filmDao = new FilmDaoImpl();
-				Connection conn = new DBCon().getDBCon();
+				Connection conn = new JdbcConnection().getConnection();
 				String sql = "select film_id,title,description,language_id from film;";
 				PreparedStatement pst = conn.prepareStatement(sql);
 				ResultSet rs = pst.executeQuery();

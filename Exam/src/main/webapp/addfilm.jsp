@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>首页</title>
+<title>Insert title here</title>
 </head>
 <body>
-<a href="login.jsp">登录</a><br>
-<a href="films.jsp">查看所有电影</a>
-<a href="addfilm.jsp">增加电影</a>
+
 </body>
 </html>

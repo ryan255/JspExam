@@ -15,6 +15,7 @@
 </head>
 <body>
 登录成功！<br>
+<a href="index.jsp">返回首页</a><br>
 欢迎：<%= request.getParameter("name") %><br>
 <table>
 		<tr>
